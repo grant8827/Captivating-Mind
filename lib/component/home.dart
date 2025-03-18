@@ -39,7 +39,7 @@ class _homePageState extends State<homePage> {
               image: AssetImage('lib/assets/image/bgimage.jpg'),
               fit: BoxFit.fill),
         ),
-        child: radioPlayer(),
+        child: const radioPlayer(),
       ),
       drawer: Drawer(
         backgroundColor: const Color.fromARGB(255, 221, 221, 221),

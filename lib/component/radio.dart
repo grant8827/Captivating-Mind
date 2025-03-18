@@ -8,12 +8,14 @@ import 'package:flutter/material.dart';
 import 'package:radio_player/radio_player.dart';
 
 class radioPlayer extends StatefulWidget {
+  const radioPlayer({super.key});
+
   @override
   _MyAppState createState() => _MyAppState();
 }
 
 class _MyAppState extends State<radioPlayer> {
-  RadioPlayer _radioPlayer = RadioPlayer();
+  final RadioPlayer _radioPlayer = RadioPlayer();
   bool isPlaying = false;
   List<String>? metadata;
 
@@ -25,8 +27,8 @@ class _MyAppState extends State<radioPlayer> {
 
   void initRadioPlayer() {
     _radioPlayer.setChannel(
-      title: 'Radio Player',
-      url: 'https://stream.zeno.fm/lo2dd6zbzifvv',
+      title: 'Captivating Mind Radio',
+      url: 'https://usa20.fastcast4u.com/captivatingradio',
       imagePath: 'lib/assets/image/captivating_ming.png',
     );
 
@@ -70,8 +72,8 @@ class _MyAppState extends State<radioPlayer> {
                   height: 280,
                   width: 300,
                   child: ClipRRect(
-                    child: artwork,
                     borderRadius: BorderRadius.circular(20.0),
+                    child: artwork,
                   ),
                 );
               },
